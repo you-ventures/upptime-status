@@ -38,6 +38,7 @@ status-website:
   logoUrl: https://agentaishield.com/images/aais-logo.png
   name: AgentAIShield Status
   theme: dark
+  customHeadHtml: '<link rel="stylesheet" href="/custom.css">'
   introTitle: "**AgentAIShield** — Service Status"
   introMessage: Real-time uptime monitoring for AgentAIShield services. Checks every 5 minutes. Powered by [Upptime](https://github.com/upptime/upptime).
   navbar:

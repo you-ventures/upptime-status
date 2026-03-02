@@ -1,0 +1,77 @@
+/* AAIS Branding - Purple instead of green */
+:root {
+  --color-up: #6366f1;          /* AAIS purple for "up" status */
+  --color-degraded: #f59e0b;    /* Amber for degraded */
+  --color-down: #ef4444;        /* Red for down */
+  --color-border: #6366f1;      /* Purple borders */
+}
+
+/* Override Upptime's default green with AAIS purple */
+.status.up,
+.status-day.up,
+.badge.up {
+  background-color: #6366f1 !important;
+}
+
+.summary .meta .update.up {
+  color: #6366f1 !important;
+}
+
+/* Graph bars - purple instead of green */
+.graph .bar.up {
+  background-color: #6366f1 !important;
+}
+
+/* Status indicators */
+.indicator.up::before {
+  background-color: #6366f1 !important;
+}
+
+/* Links and accents */
+a {
+  color: #6366f1 !important;
+}
+
+a:hover {
+  color: #818cf8 !important;
+}
+
+/* Header branding */
+header h1 strong {
+  color: #6366f1;
+}
+
+/* Progress bars */
+.progress .bar {
+  background-color: #6366f1 !important;
+}
+
+/* Buttons and interactive elements */
+button,
+.button {
+  border-color: #6366f1 !important;
+}
+
+button:hover,
+.button:hover {
+  background-color: #6366f1 !important;
+  color: white !important;
+}
+
+/* Status badges in tables */
+.badge {
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-weight: 500;
+}
+
+/* Day status dots */
+.day-status-bar .day.up {
+  background-color: #6366f1 !important;
+}
+
+/* Overall status banner */
+.overall-status.up {
+  background-color: rgba(99, 102, 241, 0.1) !important;
+  border-left: 4px solid #6366f1 !important;
+}
