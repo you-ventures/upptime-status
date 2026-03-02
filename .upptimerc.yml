@@ -33,33 +33,17 @@ sites:
       - 401
       - 400
 
-  - name: Apex AI
-    url: https://apex-ai-production.up.railway.app
-    expectedStatusCodes:
-      - 200
-      - 301
-      - 302
-
-  - name: You! Ventures Website
-    url: https://youventures-website-production.up.railway.app
-    expectedStatusCodes:
-      - 200
-      - 301
-      - 302
-
 status-website:
   cname: status.agentaishield.com
   logoUrl: https://agentaishield.com/images/aais-logo.png
-  name: You! Ventures Status
+  name: AgentAIShield Status
   theme: dark
-  introTitle: "**You! Ventures** — Service Status"
-  introMessage: Real-time uptime monitoring for AgentAIShield, Apex AI, and all You! Ventures services. Powered by [Upptime](https://github.com/upptime/upptime).
+  introTitle: "**AgentAIShield** — Service Status"
+  introMessage: Real-time uptime monitoring for AgentAIShield services. Checks every 5 minutes. Powered by [Upptime](https://github.com/upptime/upptime).
   navbar:
     - title: Status
       href: /
     - title: AgentAIShield
       href: https://agentaishield.com
-    - title: Apex AI
-      href: https://apex-ai-production.up.railway.app
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
