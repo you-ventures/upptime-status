@@ -4,13 +4,13 @@
 
 ## Monitored Services
 
-| Service | URL |
-|---------|-----|
-| AgentAIShield | https://agentaishield.com |
-| AAIS App | https://agentaishield.com/app.html |
-| AAIS API Auth | https://agentaishield.com/api/auth/me |
-| AAIS Ingest API | https://agentaishield.com/api/v1/ingest |
-| Apex AI | https://apex-ai-production.up.railway.app |
+| Service         | URL                                       |
+| --------------- | ----------------------------------------- |
+| AgentAIShield   | https://agentaishield.com                 |
+| AAIS App        | https://agentaishield.com/app.html        |
+| AAIS API Auth   | https://agentaishield.com/api/auth/me     |
+| AAIS Ingest API | https://agentaishield.com/api/v1/ingest   |
+| Apex AI         | https://apex-ai-production.up.railway.app |
 
 ## Status Page
 
