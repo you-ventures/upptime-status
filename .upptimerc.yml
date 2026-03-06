@@ -22,6 +22,11 @@ sites:
       - 200
       - 401
 
+  - name: AAIS Health
+    url: https://agentaishield.com/health
+    expectedStatusCodes:
+      - 200
+
   - name: AAIS Ingest API
     url: https://agentaishield.com/api/v1/ingest
     method: POST
@@ -32,6 +37,10 @@ sites:
       - 200
       - 401
       - 400
+
+notifications:
+  - type: discord
+    url: $DISCORD_WEBHOOK_URL
 
 status-website:
   cname: status.agentaishield.com
