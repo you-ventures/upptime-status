@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" fill="none">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="circuitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a5b4fc"/>
+      <stop offset="100%" stop-color="#c4b5fd"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield shape -->
+  <path d="M24 4 L38 9 L38 22 C38 31 31 39 24 43 C17 39 10 31 10 22 L10 9 Z" fill="url(#shieldGrad)"/>
+  <!-- Circuit lines inside shield -->
+  <line x1="17" y1="18" x2="21" y2="18" stroke="url(#circuitGrad)" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="21" y1="18" x2="21" y2="22" stroke="url(#circuitGrad)" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="21" y1="22" x2="27" y2="22" stroke="url(#circuitGrad)" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="27" y1="22" x2="27" y2="18" stroke="url(#circuitGrad)" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="27" y1="18" x2="31" y2="18" stroke="url(#circuitGrad)" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="24" y1="22" x2="24" y2="28" stroke="url(#circuitGrad)" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="20" y1="28" x2="28" y2="28" stroke="url(#circuitGrad)" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- Circuit nodes -->
+  <circle cx="17" cy="18" r="1.5" fill="#c4b5fd"/>
+  <circle cx="31" cy="18" r="1.5" fill="#c4b5fd"/>
+  <circle cx="24" cy="13" r="1.5" fill="#a5b4fc"/>
+  <circle cx="24" cy="28" r="1.5" fill="#c4b5fd"/>
+  <circle cx="20" cy="28" r="1" fill="#a5b4fc"/>
+  <circle cx="28" cy="28" r="1" fill="#a5b4fc"/>
+  <!-- Vertical line from top -->
+  <line x1="24" y1="13" x2="24" y2="18" stroke="url(#circuitGrad)" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="21" y1="18" x2="24" y2="18" stroke="url(#circuitGrad)" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- Text: AgentAIShield -->
+  <text x="50" y="20" font-family="Inter, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#e2e8f0" letter-spacing="-0.3">AgentAI</text>
+  <text x="50" y="38" font-family="Inter, -apple-system, sans-serif" font-size="15" font-weight="700" fill="url(#shieldGrad)" letter-spacing="-0.3">Shield</text>
+</svg>
