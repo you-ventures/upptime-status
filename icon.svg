@@ -1,4 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" fill="none">
-  <circle cx="60" cy="60" r="54" stroke="#6366f1" stroke-width="3" fill="#0a0a14"/>
-  <text x="60" y="60" text-anchor="middle" dominant-baseline="central" font-family="JetBrains Mono,SF Mono,ui-monospace,monospace" font-size="34" font-weight="800" fill="#ffffff">{AI}</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a14"/>
+      <stop offset="100%" stop-color="#0d0d1e"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="outerGlow">
+      <feGaussianBlur stdDeviation="25" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <!-- Outer subtle glow ring -->
+  <circle cx="512" cy="512" r="350" stroke="#6366f1" stroke-width="1" fill="none" opacity="0.15"/>
+  <!-- Main ring with glow -->
+  <circle cx="512" cy="512" r="320" stroke="url(#ring)" stroke-width="10" fill="none" filter="url(#glow)"/>
+  <!-- Inner subtle ring -->
+  <circle cx="512" cy="512" r="305" stroke="#6366f1" stroke-width="1" fill="none" opacity="0.2"/>
+  <!-- {AI} text — centered precisely -->
+  <text x="512" y="512" text-anchor="middle" dominant-baseline="central" font-family="JetBrains Mono,SF Mono,ui-monospace,Menlo,monospace" font-size="210" font-weight="800" fill="#ffffff">{AI}</text>
 </svg>
