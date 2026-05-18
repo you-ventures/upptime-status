@@ -38,12 +38,49 @@ sites:
       - 401
       - 400
 
+  # --- .ai / .io domain monitors (activate once DNS is live — issue #22) ---
+  - name: AgentAIShield.ai
+    url: https://agentaishield.ai
+    expectedStatusCodes:
+      - 200
+      - 301
+      - 302
+
+  - name: AgentAIShield.io
+    url: https://agentaishield.io
+    expectedStatusCodes:
+      - 200
+      - 301
+      - 302
+
+  - name: AAIS API .ai
+    url: https://agentaishield.ai/api/auth/me
+    expectedStatusCodes:
+      - 200
+      - 301
+      - 302
+      - 401
+
+  - name: AAIS Health .io
+    url: https://agentaishield.io/health
+    expectedStatusCodes:
+      - 200
+      - 301
+      - 302
+
+  - name: AAIS Status Page
+    url: https://status.agentaishield.io
+    expectedStatusCodes:
+      - 200
+      - 301
+      - 302
+
 notifications:
   - type: discord
     url: $DISCORD_WEBHOOK_URL
 
 status-website:
-  cname: status.agentaishield.com
+  cname: status.agentaishield.io
   favicon: "https://raw.githubusercontent.com/you-ventures/upptime-status/master/favicon-32.png"
   logoUrl: "https://raw.githubusercontent.com/you-ventures/upptime-status/master/icon.svg"
   name: AgentAIShield
